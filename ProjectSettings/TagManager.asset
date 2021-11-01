@@ -9,7 +9,7 @@ TagManager:
   - Rifle
   - ShotGun
   - StagePrefabs
-  - Door
+  - Doors
   layers:
   - Default
   - TransparentFX
