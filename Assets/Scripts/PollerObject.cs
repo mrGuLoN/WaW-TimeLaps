@@ -14,6 +14,8 @@ public class PollerObject : MonoBehaviour
         {
             bulletPistol,
             blood,
+            rebound,
+            wallBullet,
             monster1,
             monster2,
             fastMonster

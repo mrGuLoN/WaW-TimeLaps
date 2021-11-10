@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour, IPooledObjects
     
     public float speed;
     public float damage;
-    [SerializeField] private PollerObject.ObjectInfo.ObjectType blood;
+    [SerializeField] private PollerObject.ObjectInfo.ObjectType blood, rebound;
     [SerializeField] private float bulletPower;
 
    
@@ -40,6 +40,11 @@ public class Bullet : MonoBehaviour, IPooledObjects
                 hit.collider.GetComponent<hp>().health -= damage;
                 var bulletFire = PollerObject.Instance.GetObject(blood);
                 bulletFire.transform.position = this.transform.position;                       
+            }
+            else
+            {
+                var bulletFire = PollerObject.Instance.GetObject(rebound);
+                bulletFire.transform.position = this.transform.position;               
             }
             PollerObject.Instance.DestroyGameObject(this.gameObject);
         }

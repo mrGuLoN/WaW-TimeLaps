@@ -47,6 +47,8 @@ MonoBehaviour:
   speed: 0
   damage: 0
   blood: 1
+  rebound: 2
+  bulletHolePNG: 3
   bulletPower: 0
   type: 0
 --- !u!1 &8238945277020529128

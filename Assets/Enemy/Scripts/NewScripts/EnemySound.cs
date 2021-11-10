@@ -22,7 +22,7 @@ public class EnemySound : MonoBehaviour
 
     public void Stay()
     {
-        stay.PlayDelayed(_timing);
+        stay.PlayDelayed(_timing/10);
     }
     public void Run()
     {
